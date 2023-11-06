@@ -23,7 +23,7 @@ export const IngredientsList = () => {
         async function deleteCommentFunc() {
             try{
                 const data = await deleteIngredient(ingredient.id);
-                const newData = ingredients.filter((ingredient) => ingredient.id != data.data.id);
+                const newData = ingredients.filter((ingredient) => ingredient.id !== data.data.id);
                 setIngredients(newData);
             } catch(error){
             toast.error(error.message, {closeButton: true, position: "bottom-center" });

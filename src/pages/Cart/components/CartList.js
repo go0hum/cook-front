@@ -1,9 +1,8 @@
-import { useState } from "react"
 import { useCart } from "../../../context";
 import { CartCard } from "./CartCard"
 
 export const CartList = () => {
-  const { cartList, total } = useCart();
+  const { cartList } = useCart();
 
   return (
     <>

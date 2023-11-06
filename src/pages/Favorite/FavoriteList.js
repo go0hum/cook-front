@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { useTitle } from "../../hooks/useTitle";
 
 import { ProductCard } from "../../components";

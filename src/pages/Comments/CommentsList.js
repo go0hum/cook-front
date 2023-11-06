@@ -23,7 +23,7 @@ export const CommentsList = () => {
         async function deleteCommentFunc() {
             try{
                 const data = await deleteComment(comment.id);
-                const newData = comments.filter((comment) => comment.id != data.data.id);
+                const newData = comments.filter((comment) => comment.id !== data.data.id);
                 setComments(newData);
             } catch(error){
             toast.error(error.message, {closeButton: true, position: "bottom-center" });
